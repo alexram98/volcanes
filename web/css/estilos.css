@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-color: rgb(181, 231, 231);
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.logo{
+    width: 30%;
+}
+.logo img{
+    padding: 3px;
+    width: 25%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+}
+.menu ul li a, .redes ul li a{
+    display: block;
+    padding: 0 10px;
+    text-decoration:  none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+}
+
+main{
+    padding-top: 20px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.menu ul li a:hover, .redes ul li a:hover{
+    color: white;
+    background-color: black;
+    padding: 10px;
+}
+.contenido{
+    display: flex;
+    gap: 15px;
+    margin: 15px;
+}
+.contenido img{
+    width: 100%;
+    border-radius: 15px;
+}
+.contenido p{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+
+}
+.titulo{
+    border-bottom: 2px double green;
+    color: green;
+    margin-bottom: 12px;
+}
+.filtros {
+    width: 30%;
+    border-radius: 50%;
+    filter: saturate(100%) contrast(180%) drop-shadow(10px 10px 5px #000000);
+}
+.filtros:hover {
+        /*transform: rotate(7deg);*/
+        /*transform: scale(0.8) ;*/
+        /*transform: skew(26deg);*/
+        /*transform: skew(-1deg) translate(69px,0px);*/
+        transform: skew(-1deg) translate(6px, -85px);
+}
+p {
+    animation-duration: 15s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    } 
+}
+.active{
+    color: red;
+}
+.volcan{
+    box-shadow: 10px 10px 24px 22px rgb(116, 185, 116);
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1 1 auto;
+}
+.volcan img{
+    border-radius: 10px;
+    width: 100%;
+}
+.volcan iframe{
+    border-radius: 10px;
+    height: 30vh;
+    width: 100%;
+
+}
+.volcanes{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 25px;
+}
+
+.tiktok{
+    display: flex; 
+    flex-flow: row wrap;
+    gap: 25px;
+}
+.volcan blockquote{
+    width: 100%;
+}
+
